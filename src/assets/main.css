@@ -1,0 +1,129 @@
+/* ==========================
+   RESET & GLOBAL STYLES
+   ========================== */
+
+/* Universal reset for padding, margin, and box-sizing */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Import Poppins font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* Apply Poppins font globally */
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* ==========================
+   COLOR VARIABLES
+   ========================== */
+
+:root {
+  --primary-color: #4e73df; /* Azul profundo */
+  --secondary-color: #224abe; /* Azul eléctrico */
+  --text-color: #eeeeee;
+  --text-color-gray: #dddddd;
+  --text-color-hover: #fff;
+  --circle-color: #FFFBEB; /* Color para los círculos */
+}
+
+/* ==========================
+   TYPOGRAPHY
+   ========================== */
+
+/* Text color styling */
+.text-accent {
+  color: var(--primary-color) !important;
+}
+
+.text-gray{
+  color: var(--text-color-gray) !important;
+}
+
+/* Style for anchor (link) elements */
+a {
+  font-size: 16px;
+  color: var(--text-color) !important;
+  text-decoration: none;
+}
+
+/* Hover effect for anchor elements */
+.footer-links:hover {
+  font-size: 18px;
+  transition: all .2s;
+}
+
+.nav-link:hover {
+  font-size: 18px;
+  transition: all .2s;
+  color: var(--text-color-hover) !important;
+}
+
+/* ==========================
+   BACKGROUNDS & BUTTONS
+   ========================== */
+
+/* Primary background styling */
+.bg-primary {
+  background: linear-gradient(to bottom, var(--primary-color) 10%, var(--secondary-color) 100%);
+}
+
+/* Hero section background gradient */
+.bg-hero {
+  background: linear-gradient(to bottom, var(--primary-color) 10%, var(--secondary-color) 100%);
+}
+
+/* Navbar background color */
+.bg-navbar {
+  background-color: var(--primary-color) !important;
+}
+
+/* Primary button styling */
+.btn-primary {
+  font-size: 18px;
+  background-color: var(--primary-color) !important;
+  border-color: var(--primary-color) !important;
+  color: var(--text-color) !important;
+}
+
+/* Primary button hover */
+.btn-primary:hover {
+  font-size: 20px;
+  transition: all .2s;
+  background-color: var(--secondary-color) !important;
+  border-color: var(--secondary-color) !important;
+  color: var(--text-color-hover) !important;
+}
+
+/* ==========================
+   CUSTOM STYLES FOR SECTIONS
+   ========================== */
+
+/* Estilo general para todos los círculos con ícono */
+.circle-icon-bg {
+    background-color: var(--circle-color);
+}
+
+/* Estilo general para la imagen dentro del círculo */
+.circle-icon-bg img {
+    width: 60%;
+}
+
+/* Tamaños específicos para la sección "about" */
+#about .circle-icon-bg {
+    width: 100px;
+    height: 100px;
+}
+
+/* Tamaños específicos para la sección "how-it-works" */
+#how-it-works .circle-icon-bg {
+    width:100px;
+    height: 100px;
+}
+.hero-image-large {
+    width: 80%; /* Obliga a la imagen a ser 30% más ancha que su contenedor */
+   /* max-width: none; /* Anula la restricción de tamaño de la clase img-fluid */
+}
